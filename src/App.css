@@ -1,0 +1,30 @@
+:root {
+  --main-bg-color-Dark: #222831;
+  --main-bg-color-Light: #ffffff;
+  --main-color-Light: black;
+  --main-color-Dark: aliceblue;
+}
+
+.container-fluid{
+  padding: 0px;
+  height: 100%;
+}
+.pl{
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
+  /* transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out; */
+}
+
+.alert-appear {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1000ms, transform 1000ms;
+}
+.alert-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1000ms, transform 1000ms;
+}

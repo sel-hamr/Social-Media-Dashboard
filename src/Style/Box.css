@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.box {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.box1 {
+  width: 98%;
+  height: 100%;
+  border-radius: 7px;
+}
+.box-titre {
+  width: 100%;
+  height: 2%;
+  background-color: blueviolet;
+  border-radius: 7px 7px 0px 0px;
+}
+.box-body {
+  width: 100%;
+  height: 98%;
+  background-color: violet;
+  border-radius: 0px 0px 7px 7px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.box-user,
+.today {
+  display: flex;
+  align-items: center;
+}
+.box-user p,
+.today p {
+  margin-bottom: 0px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.today {
+  animation: test 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 900ms both;
+}
+
+.box-followers {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.box-followers p:nth-of-type(1) {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 500ms both;
+}
+.box-followers p:nth-of-type(2) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+.box-body.Dark {
+  background: rgb(54, 59, 78);
+}
+.box-body.Dark:hover {
+  background: rgb(74, 80, 104);
+}
+.box-body.Light {
+  background: #f6f6f6;
+}
+.box-body.Light:hover {
+  background: #eaf6f6;
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  } 
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes test {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

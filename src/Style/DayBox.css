@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200&family=Mukta+Malar:wght@200&display=swap');
+.DayBox {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.DayBox1 {
+  width: 98%;
+  height: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.DayBox1.Dark {
+  background: rgb(54, 59, 78);
+}
+.DayBox1.Dark:hover {
+  background: rgb(74, 80, 104);
+}
+.DayBox1.Light {
+  background: #f6f6f6;
+}
+.DayBox1.Light:hover {
+  background: #eaf6f6;
+}
+
+.Line1,
+.Line2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Line1 p,
+.Line2 p {
+  margin-bottom: 0px;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 600;
+}
+.Line2 div{
+    display: flex;
+    align-items: center;
+}
+.Line2 div p{
+padding-left: 10PX;
+}
+.Line2 > p{
+   font-size: 40px;
+    }

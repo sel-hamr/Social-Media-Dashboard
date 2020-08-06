@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.Body {
+  width: 100%;
+  transform: translateY(-90px);
+}
+.Overview {
+  font-family: 'Mukta', sans-serif;
+  font-size: 27px;
+  color: white;
+  font-weight: 500;
+  margin-left: 15px;
+}
+@media (max-width: 576px) {
+  .Body {
+    transform: translateY(-30px);
+  }
+}

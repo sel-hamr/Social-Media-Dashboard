@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200&family=Mukta+Malar:wght@200&display=swap');
+:root {
+  --header-bg-color-Dark: #233142;
+  --header-bg-color-Light: aliceblue;
+}
+.header {
+  height: 200px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header.Dark {
+  background-color: var(--header-bg-color-Dark);
+}
+.header.Light {
+  background-color: var(--header-bg-color-Light);
+}
+.no-padding {
+  padding: 0px;
+}
+.switch {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding: 0px;
+}
+.switch-body {
+  border-left: 10px;
+  width: 45px;
+  background-color: blue;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch__circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.header-titre {
+  display: flex;
+  flex-flow: column;
+  align-items: baseline;
+}
+.header-titre p:nth-of-type(1) {
+  font-family: 'Mukta', sans-serif;
+  font-size: 27px;
+}
+.header-titre.Dark p:nth-of-type(1) {
+  color: var(--main-color-Dark);
+  margin-bottom: 0px;
+}
+.header-titre.Light p:nth-of-type(1) {
+  color: var(--main-color-Light);
+  margin-bottom: 0px;
+}
+
+.header-titre p:nth-of-type(2) {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: 600;
+}
+.header-titre.Dark p:nth-of-type(2),
+.switch-titre.Dark p:nth-of-type(1) {
+  color: #909b99;
+}
+.header-titre.Light p:nth-of-type(2),
+.switch-titre.Light p:nth-of-type(1) {
+  color: #393e46;
+}
+
+.switch__right {
+  background-color: var(--header-bg-color-Light);
+  transform: translateX(23px);
+}
+.switch__left {
+  background-color: var(--header-bg-color-Dark);
+  transform: translateX(2);
+}
+.line {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
